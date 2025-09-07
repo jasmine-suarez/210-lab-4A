@@ -43,7 +43,7 @@ int main()
 
     for (int i = 0; i < colors.size(); i++)
     {
-        cout << setw(10) << (i + 1) << setw(10) << colors[i].redVal
+        cout << setw(8) << (i + 1) << setw(10) << colors[i].redVal
              << setw(10) << colors[i].greenVal << setw(10) << colors[i].blueVal
              << endl;
     }
