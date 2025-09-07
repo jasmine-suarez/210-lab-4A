@@ -3,9 +3,9 @@
 
 #include <iostream>
 #include <vector>
-#include <ctime> // for time()
+#include <ctime>   // for time()
 #include <cstdlib> // for rand()
-#include <iomanip> // for cout manipulators
+#include <iomanip> // for setw()
 using namespace std;
 
 struct Color
@@ -37,6 +37,16 @@ int main()
 
     cout << setw(10) << "Color#" << setw(10) << "R value"
          << setw(10) << "G value" << setw(10) << "B value" << endl;
+
+    cout << setw(10) << "------" << setw(10) << "-------"
+         << setw(10) << "-------" << setw(10) << "-------" << endl;
+
+    for (int i = 0; i < colors.size(); i++)
+    {
+        cout << setw(10) << (i + 1) << setw(10) << colors[i].redVal
+             << setw(10) << colors[i].greenVal << setw(10) << colors[i].blueVal
+             << endl;
+    }
 
     return 0;
 }
