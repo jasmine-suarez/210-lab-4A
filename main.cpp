@@ -5,6 +5,7 @@
 #include <vector>
 #include <ctime> // for time()
 #include <cstdlib> // for rand()
+#include <iomanip> // for cout manipulators
 using namespace std;
 
 struct Color
@@ -30,7 +31,12 @@ int main()
         temp.redVal = rand() % 256;
         temp.greenVal = rand() % 256;
         temp.blueVal = rand() % 256;
+
+        colors.push_back(temp);
     }
+
+    cout << setw(10) << "Color#" << setw(10) << "R value"
+         << setw(10) << "G value" << setw(10) << "B value" << endl;
 
     return 0;
 }
