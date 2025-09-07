@@ -2,9 +2,18 @@
 // IDE used: VS Code
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+struct Color
+{
+    int redVal;
+    int greenVal;
+    int blueVal;
+};
 
 int main()
 {
+    vector<Color> colors;
     return 0;
 }
