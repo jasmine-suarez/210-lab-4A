@@ -18,9 +18,19 @@ int main()
 {
     srand(time(0));
 
+    // Generates random int n between 25-50
+    int n = 25 + (rand() % 26);
+
     vector<Color> colors;
 
-    int n = 25 + (rand() % 26);
+    for (int i = 0; i < n; i++)
+    {
+        Color temp;
+
+        temp.redVal = rand() % 256;
+        temp.greenVal = rand() % 256;
+        temp.blueVal = rand() % 256;
+    }
 
     return 0;
 }
